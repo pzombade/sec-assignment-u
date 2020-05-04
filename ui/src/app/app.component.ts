@@ -24,12 +24,9 @@ export class AppComponent {
   serverResponse = null;
   private chart: am4charts.XYChart;
 
-  
-
   constructor(private zone: NgZone, private httpClient:HttpClient, private assignmentService:AssignmentService){
 
   }
-
 
   ngAfterViewInit() {
     this.zone.runOutsideAngular(() => {
@@ -54,55 +51,6 @@ for(let i=0; i<mapData.length; i++){
 }
 
 
-// Add data
-/*
-chartx.data = [{
-  "my_key": "USA",
-  "value": 4025
-}, {
-  "my_key": "China",
-  "value": 1882
-}, {
-  "my_key": "Japan",
-  "value": 1809
-}, {
-  "my_key": "Germany",
-  "value": 1322
-}, {
-  "my_key": "UK",
-  "value": 1122
-}, {
-  "my_key": "France",
-  "value": 1114
-}, {
-  "my_key": "India",
-  "value": 984
-}, {
-  "my_key": "Spain",
-  "value": 711
-}, {
-  "my_key": "Netherlands",
-  "value": 665
-}, {
-  "my_key": "Russia",
-  "value": 580
-}, {
-  "my_key": "South Korea",
-  "value": 443
-}, {
-  "my_key": "Canada",
-  "value": 441
-}, {
-  "my_key": "Brazil",
-  "value": 395
-}, {
-  "my_key": "Italy",
-  "value": 386
-}, {
-  "my_key": "Taiwan",
-  "value": 338
-}];
-*/
 // Create axes
 let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
 categoryAxis.tooltip.disabled = false;
