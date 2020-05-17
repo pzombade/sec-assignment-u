@@ -19,7 +19,7 @@ am4core.useTheme(am4themes_animated);
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'app';//test
   fileToUpload: File = null;
   serverResponse = null;
   private chart: am4charts.XYChart;
